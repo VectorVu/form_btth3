@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>FORM - 20522209</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>SƠ YẾU LÝ LỊCH SINH VIÊN</h2>
+        </div>
+        <div class="info">
+            <p><strong>1. HỌ VÀ TÊN: Trương Hoàng Vũ</strong></p>
+            <p><strong>2. Ngày, tháng, năm sinh: 26/04/1998</strong></p>
+        </div>
+        <div class="address">
+            <p><strong>3. Địa chỉ tạm trú:</strong></p>
+            <div class="select">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Ký túc xá ĐHQG-HCM
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Khác
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="connect">
+            <p><strong>4. Khi cần báo tin cho ai? ở đâu? </strong><span style="color: red">*</span></p>
+            <input class="form-control" type="text" placeholder="Thông tin người liên hệ">
+            <p><strong>5. Điện thoại (người cần báo tin) </strong><span style="color: red">*</span></p>
+            <input class="form-control" type="text" placeholder="09..">
+            <p style="font-size: 13px;">Vui lòng nhập số 01 số điện thoại là số, không kèm các ký tự, ví dụ: 0917234567
+            </p>
+        </div>
+        <div class="studentInfo">
+            <h4 style="color: #0088CC;">I.PHẦN BẢN THÂN SINH VIÊN</h4>
+            <p><strong>I.1. HỌ VÀ TÊN: Trương Hoàng Vũ</strong></p>
+            <p><strong>I.2. Giới tính: Nam</strong></p>
+            <p><strong>I.3. Ngày, tháng, năm sinh: 26/04/1998</strong></p>
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputNS" style="flex-direction: row;"><strong>I.4. Nơi Sinh</strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputNS" class="form-control">
+                        <option selected>Chọn tỉnh</option>
+                        <option>Đồng Nai</option>
+                        <option>Hà Nội</option>
+                        <option>TP.HCM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputCity" style="flex-direction: row;"><strong>I.5. CMND/CCCD</strong></label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputZip" style="flex-direction: row;"><strong>I.6. Ngày cấp CMND/CCCD</strong><span
+                            style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputState" style="flex-direction: row;"><strong>I.7. Nơi cấp CMND/CCCD</strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Chọn tỉnh</option>
+                        <option>Đồng Nai</option>
+                        <option>Hà Nội</option>
+                        <option>TP.HCM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputdt" style="flex-direction: row;"><strong>I.8. Dân tộc </strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputdt" class="form-control">
+                        <option selected>Kinh</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputTG" style="flex-direction: row;"><strong>I.9. Tôn giáo </strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputTG" class="form-control">
+                        <option selected>Không</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputXT" style="flex-direction: row;"><strong>I.10. Thành phần xuất thân </strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputXT" class="form-control">
+                        <option selected>Khác</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputPhone" style="flex-direction: row;"><strong>I.11. Điện thoại</strong><span
+                            style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="inputPhone">
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 13px;">Ví dụ: 09172345678, không được trùng với Ba, Mẹ, Báo tin!</p>
+        <p><strong>Thông tin tài khoản ngân hàng của sinh viên (Tài khoản chính chủ của sinh viên, không được là số tài
+                khoản của người khác)</strong></p>
+        <div class="bankInfo">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputNH" style="flex-direction: row;"><strong>Thông tin Ngân hàng</strong></label>
+                    <select id="inputNH" class="form-control">
+                        <option selected>Chọn Ngân hàng</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputTK" style="flex-direction: row;"><strong>Số tài khoản</strong></label>
+                    <input type="text" class="form-control" id="inputTK">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCN" style="flex-direction: row;"><strong>Chi nhánh</strong></label>
+                    <input type="text" class="form-control" id="inputCN">
+                </div>
+            </div>
+        </div>
+        <div class="email">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-6">
+                    <label for="inputEma" style="flex-direction: row;"><strong>I.12. Email cá nhân (không phải email
+                            trường cấp)</strong><span style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="inputEma">
+                </div>
+            </div>
+        </div>
+        <div class="facebook">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-6">
+                    <label for="inputFB" style="flex-direction: row;"><strong>Địa chỉ Facebook(ví dụ
+                            https://www.fb.com/toan.uit)</strong></label>
+                    <input type="text" class="form-control" id="inputFB">
+                </div>
+            </div>
+        </div>
+        <div class="address">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-8">
+                    <label for="inputAdd" style="flex-direction: row;"><strong>I.13. Địa chỉ thường trú</strong><span
+                            style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="inputAdd">
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 13px;">Chỉ nhập Số nhà, đường hoặc Thôn xóm. Không nhập đầy đủ, các thông tin khác chọn bên
+            dưới.</p>
+        <div class="normalAddress">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputTinh" style="flex-direction: row;"><strong>I.15. Tỉnh / TP-</strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputTinh" class="form-control">
+                        <option selected>Chọn</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputQ" style="flex-direction: row;"><strong>I.16. Quận / Huyện-</strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputQ" class="form-control">
+                        <option selected>Chọn</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputp" style="flex-direction: row;"><strong>I.14. Phường / Xã-</strong><span
+                            style="color: red">*</span></label>
+                    <select id="inputp" class="form-control">
+                        <option selected>Chọn</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="area">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputKV" style="flex-direction: row;"><strong>I.20. Khu vực tuyển sinh:</strong></label>
+                    <select id="inputKV" class="form-control">
+                        <option selected>Chọn</option>
+                        <option>1</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputDT" style="flex-direction: row;"><strong>I.22. Đối tượng:</strong></label>
+                    <select id="inputDT" class="form-control">
+                        <option selected>Chọn</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <p><strong>I.21. Mã số sinh viên: 20522209, Ngành học: 7480201 - Công nghệ Thông tin (VB2CQ), Trường ĐH Công
+                nghệ Thông Tin, Ký hiệu Trường QSC.</strong></p>
+        <div class="form-group" style="display: flex;flex-direction:row;">
+            <div class="form-check" style="margin-right: 10px;">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                    I.23. Đoàn viên?
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                <label class="form-check-label" for="gridCheck2">
+                    I.24. Đảng viên?
+                </label>
+            </div>
+        </div>
+        <div class="position">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-3">
+                    <label for="inputCV" style="flex-direction: row;"><strong>I.25. Chức vụ cao nhất đã
+                            qua:</strong></label>
+                    <input type="text" class="form-control" id="inputCV">
+                </div>
+            </div>
+        </div>
+        <div class="learning">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-8">
+                    <label for="inputQT" style="flex-direction: row;"><strong>I.26. Quá trình học tập, công
+                            tác:</strong><span style="color: red">*</span></label>
+                    <textarea class="form-control" id="inputQT" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="archive">
+            <div class="form-row" style="flex-direction: row;">
+                <div class="form-group col-md-8">
+                    <label for="inputAR" style="flex-direction: row;"><strong>I.27. Thành tích, khen
+                            thưởng</strong></label>
+                    <textarea class="form-control" id="inputAR" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
